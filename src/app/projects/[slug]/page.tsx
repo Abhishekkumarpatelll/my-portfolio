@@ -3,18 +3,18 @@ import { projects } from '@/app/data/projects'
 import type { Metadata } from 'next'
 import ProjectDetail from '@/components/ProjectDetail'
 
+
 type Props = {
   params: { slug: string };
 };
 
-
-export function generateStaticParams() {
+export async function generateStaticParams() {
   return projects.map((project) => ({
     slug: project.slug,
   }))
 }
 
-export function generateMetadata({ params }: Props): Metadata {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const project = projects.find((p) => p.slug === params.slug)
   if (!project) return {}
 
@@ -54,3 +54,6 @@ export default function ProjectPage({ params }: Props) {
     />
   )
 }
+
+ 
+ 
