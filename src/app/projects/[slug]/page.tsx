@@ -4,7 +4,7 @@ import type { Metadata, ResolvingMetadata } from 'next'
 import ProjectDetail from '@/components/ProjectDetail'
 
 type PageProps = {
-  params: Promise<{ slug: string }>
+  params: { slug: string }
 }
 
 export async function generateStaticParams() {
@@ -14,11 +14,10 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata(
-  props: PageProps,
-  parent: ResolvingMetadata
+  { params }: PageProps,
+  _parent: ResolvingMetadata // use underscore to avoid lint error if unused
 ): Promise<Metadata> {
-  const { slug } = await props.params
-  const project = projects.find((p) => p.slug === slug)
+  const project = projects.find((p) => p.slug === params.slug)
   if (!project) return {}
 
   return {
@@ -39,9 +38,8 @@ export async function generateMetadata(
   }
 }
 
-export default async function ProjectPage(props: PageProps) {
-  const { slug } = await props.params
-  const project = projects.find((p) => p.slug === slug)
+export default async function ProjectPage({ params }: PageProps) {
+  const project = projects.find((p) => p.slug === params.slug)
 
   if (!project) return notFound()
 

@@ -54,7 +54,7 @@ import Footer from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('http://localhost:3000'), // ✅ Change this to your actual domain in production
+   metadataBase: new URL('https://your-deployment-url.vercel.app'),
   title: 'My Portfolio | Software Developer',
   description:
     'A personal portfolio showcasing my projects, experience, and skills as a full-stack developer.',
