@@ -25,13 +25,13 @@ export default function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          I’m a software developer with a strong foundation in web technologies and a passion for
+          I&rsquo;m a software developer with a strong foundation in web technologies and a passion for
           building performant, scalable, and user-friendly applications. My journey began with a
           curiosity for how things work behind the screen, and that curiosity turned into a deep
           appreciation for clean architecture, modern frameworks, and great user experience.
           <br />
           <br />
-          I'm especially excited about working with JavaScript/TypeScript, React, and serverless
+          I&rsquo;m especially excited about working with JavaScript/TypeScript, React, and serverless
           architecture. I enjoy breaking down complex problems and turning ideas into fully
           functional products that help users.
         </motion.p>

@@ -1,7 +1,7 @@
 // components/Hero.tsx
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowDownToLine, Mail } from 'lucide-react'
+import { ArrowDownToLine } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 export default function Hero() {
