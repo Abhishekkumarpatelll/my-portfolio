@@ -13,9 +13,33 @@ export async function generateStaticParams() {
   }))
 }
 
+// export async function generateMetadata(
+//   { params }: PageProps,
+//   _parent: ResolvingMetadata // use underscore to avoid lint error if unused
+// ): Promise<Metadata> {
+//   const project = projects.find((p) => p.slug === params.slug)
+//   if (!project) return {}
+
+//   return {
+//     title: `${project.title} | My Portfolio`,
+//     description: project.description,
+//     openGraph: {
+//       title: `${project.title} | My Portfolio`,
+//       description: project.description,
+//       images: [
+//         {
+//           url: project.image,
+//           width: 1200,
+//           height: 630,
+//           alt: project.title,
+//         },
+//       ],
+//     },
+//   }
+// }
+
 export async function generateMetadata(
-  { params }: PageProps,
-  _parent: ResolvingMetadata // use underscore to avoid lint error if unused
+  { params }: PageProps
 ): Promise<Metadata> {
   const project = projects.find((p) => p.slug === params.slug)
   if (!project) return {}
@@ -37,6 +61,7 @@ export async function generateMetadata(
     },
   }
 }
+
 
 export default async function ProjectPage({ params }: PageProps) {
   const project = projects.find((p) => p.slug === params.slug)
