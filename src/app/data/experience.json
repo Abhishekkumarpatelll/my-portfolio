@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Frontend Developer",
+    "company": "Tech Innovators Inc.",
+    "date": "Jan 2023 – Present",
+    "responsibilities": [
+      "Developed scalable UI components using React and Tailwind CSS.",
+      "Collaborated with backend team to integrate RESTful APIs.",
+      "Improved Lighthouse performance score from 72 to 95."
+    ],
+    "technologies": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vercel"]
+  },
+  {
+    "title": "Software Engineering Intern",
+    "company": "CloudNet Solutions",
+    "date": "Jun 2022 – Dec 2022",
+    "responsibilities": [
+      "Built internal admin dashboard to monitor user activity.",
+      "Wrote reusable hooks to improve code modularity.",
+      "Contributed to CI/CD pipeline optimization."
+    ],
+    "technologies": ["JavaScript", "Node.js", "MongoDB", "Docker"]
+  }
+]

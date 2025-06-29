@@ -1,0 +1,9 @@
+{
+  "Languages": ["JavaScript", "TypeScript", "Python"],
+  "Frameworks": ["Next.js", "React", "Express"],
+  "Databases": ["MongoDB", "PostgreSQL", "Firebase"],
+  "Tools": ["Git", "Figma", "Postman"],
+  "Cloud": ["Vercel", "Netlify"],
+  "DevOps": ["Docker", "GitHub Actions"],
+  "Soft Skills": ["Communication", "Teamwork", "Problem Solving"]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "task-manager",
+    "title": "Task Manager App",
+    "description": "A full-featured app to create and manage tasks in real-time.",
+    "image": "/projects/task1.png",
+    "role": "Built frontend in Next.js and backend API with Express.",
+    "technologies": ["Next.js", "TypeScript", "Node.js", "MongoDB"],
+    "challenge": "Ensuring real-time updates across users with WebSockets.",
+    "result": "Reduced task processing time by 40% through UX enhancements.",
+    "liveDemo": "https://yourapp.vercel.app",
+    "github": "https://github.com/yourname/task-manager"
+  },
+  {
+    "slug": "weather-dashboard",
+    "title": "Weather Dashboard",
+    "description": "A sleek weather dashboard with real-time forecasts and interactive charts.",
+    "image": "/projects/weather.png",
+    "role": "Designed responsive UI and handled API integrations.",
+    "technologies": ["React", "Tailwind CSS", "OpenWeather API"],
+    "challenge": "Handling varying geolocation and async data loading.",
+    "result": "Improved forecast accuracy by utilizing multiple data sources.",
+    "liveDemo": "https://weatherdash.vercel.app",
+    "github": "https://github.com/yourname/weather-dashboard"
+  }
+]
