@@ -4,10 +4,9 @@ import type { Metadata } from 'next'
 import ProjectDetail from '@/components/ProjectDetail'
 
 type Props = {
-  params: {
-    slug: string
-  }
-}
+  params: { slug: string };
+};
+
 
 export function generateStaticParams() {
   return projects.map((project) => ({
