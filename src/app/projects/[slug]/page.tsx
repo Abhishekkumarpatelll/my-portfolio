@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import { projects } from '@/app/data/projects'
-import type { Metadata, ResolvingMetadata } from 'next'
+import type { Metadata } from 'next'
 import ProjectDetail from '@/components/ProjectDetail'
 
 type PageProps = {
